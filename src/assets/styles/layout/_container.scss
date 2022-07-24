@@ -1,0 +1,7 @@
+// file for changing standard Bootstrap classes
+.container {
+  @media(min-width: 1920px) {
+    max-width: vw(1140);
+  }
+}
+

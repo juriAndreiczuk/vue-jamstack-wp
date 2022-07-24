@@ -9,6 +9,7 @@ gsap.registerPlugin(ScrollTrigger)
 const App = (Vue, {appOptions}) => {
   Vue.component('Layout', DefaultLayout)
   Vue.prototype.$gsap = gsap
+  appOptions.store = store
 }
 
 export default App

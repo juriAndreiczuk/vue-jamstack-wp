@@ -1,0 +1,26 @@
+@mixin page-text(
+  $size: 20,
+  $style: $normal-font,
+  $color: $text-color,
+  $line: 1.5
+  ) {
+  @extend %font-#{$size};
+  font-family: $style;
+  color: $color;
+  line-height: $line;
+  @if $size >= 20 {
+    font-size: #{($size - 5)}px;
+    @media(min-width: 1400px) {
+      font-size: vw($size);
+    }
+  }
+  @if $size > 50 {
+    font-size: #{($size - 26)}px;
+    @media(min-width: 576px) {
+      font-size: #{($size - 14)}px;
+    }
+    @media(min-width: 1200px) {
+      font-size: vw($size);
+    }
+  }
+}
