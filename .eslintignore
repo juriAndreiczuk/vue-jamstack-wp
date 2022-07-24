@@ -1,0 +1,10 @@
+node_modules/
+static/
+_cms/
+.github/
+.cache/
+gridsome.config.js
+package-lock.json
+package.json
+README.md
+src/.temp/*
